@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+}
+
+.wrapper {
+    border: 2px solid red;
+    max-width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.loan-amount-container, .interest-rate-container, .loan-term-container, .calculate-button {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50px;
+    margin: 20px;
+    color: white;
+}
+
+.label-elements {
+    flex: 1 1;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.input-elements {
+    flex: 1 1 40px;
+    background-color: black;
+    border: 2px solid red;
+    color: white;
+}
+
+::placeholder {
+    color: rgb(252, 129, 129);
+    opacity: 0.8;
+}
+
+.input-elements:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+.input-elements:focus {
+    outline: none;
+}
+
+#calculate-button {
+    background-color: rgb(133, 0, 0);
+    color: white;
+    font-size: 3vw;
+}
+
+#display-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 4vw;
+}

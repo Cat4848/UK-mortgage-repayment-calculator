@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Monthly Repayment Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Mortgage Monthly Repayment Calculator UK</h1>
+    </div>
+
+<div class="wrapper">
+    <form id="form" action="">
+        <div class="loan-amount-container">
+            <label for="loan-amount" class="label-elements"> Loan Amount (£)</label>
+            <input required type="number" id="loan-amount" class="input-elements" placeholder="Enter loan amount">
+        </div>
+
+        <div class="interest-rate-container">
+            <label for="interest-rate" class="label-elements">Interest Rate (%)</label>
+            <input required type="number" id="interest-rate" class="input-elements" placeholder="Enter your interest rate">
+        </div>            
+        
+        <div class="loan-term-container">
+            <label for="loan-term" class="label-elements">Loan Term (years)</label>
+            <input required type="number" id="loan-term" class="input-elements" placeholder="Enter how long is the mortgage">
+        </div>
+
+        <div class="calculate-button">
+            <button id="calculate-button" class="input-elements">Get a free estimate</button>
+        </div>
+    </form>
+</div>
+
+<div id="display-container"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
